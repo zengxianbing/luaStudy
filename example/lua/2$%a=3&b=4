@@ -1,0 +1,39 @@
+ngx.var.a : 1<br/>
+ngx.var.b : 127.0.0.1<br/>
+ngx.var[2] : 2<br/>
+headers begin<br/>
+Host : 127.0.0.1<br/>
+user-agent : Wget/1.13.4 (linux-gnu)<br/>
+user-agent : Wget/1.13.4 (linux-gnu)<br/>
+host : 127.0.0.1<br/>
+content-type : application/x-www-form-urlencoded<br/>
+connection : Keep-Alive<br/>
+accept : */*<br/>
+content-length : 7<br/>
+user-agent : Wget/1.13.4 (linux-gnu)<br/>
+headers end<br/>
+<br/>
+uri args begin<br/>
+b: 4<br/>
+a: 3<br/>
+uri args end<br/>
+<br/>
+post args begin<br/>
+b: 2<br/>
+a: 1<br/>
+post args end<br/>
+<br/>
+ngx.req.http_version : 1.1<br/>
+ngx.req.get_method : POST<br/>
+ngx.req.raw_header : POST /lua_request/1/2?a=3&b=4 HTTP/1.1
+User-Agent: Wget/1.13.4 (linux-gnu)
+Accept: */*
+Host: 127.0.0.1
+Connection: Keep-Alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 7
+
+<br/>
+ngx.req.get_body_data(): a=1&b=2<br/>
+<br/>
+ngx.var.b 2
